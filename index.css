@@ -1,0 +1,218 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f6f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+    background-color: #5a2d0c;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    width: 0;
+    transition: width 0.3s;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* HOME */
+.home-section {
+    background: url('https://images.pexels.com/photos/1407845/pexels-photo-1407845.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.btn {
+    background-color: #af4425;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8c361d;
+    transform: scale(1.05); /* Transformação 1 */
+}
+
+/* SOBRE */
+.about-section {
+    padding: 80px 20px;
+    background-color: #fff8f2;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.text-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #5a2d0c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #40210a;
+    transform: translateY(-4px); /* Transformação 2 */
+}
+
+/* PRODUTOS */
+.products-section {
+    padding: 80px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.product-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #af4425;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #2d1c10;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-copy {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
